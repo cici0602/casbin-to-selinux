@@ -18,8 +18,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/cici0602/pml-to-selinux/compiler"
-	"github.com/cici0602/pml-to-selinux/selinux"
+	"github.com/casbin/casbin-to-selinux/compiler"
+	"github.com/casbin/casbin-to-selinux/selinux"
 	"github.com/spf13/cobra"
 )
 
@@ -35,9 +35,9 @@ var (
 
 func main() {
 	rootCmd := &cobra.Command{
-		Use:   "pml2selinux",
+		Use:   "casbin2selinux",
 		Short: "Compile Casbin PML to SELinux policies",
-		Long: `pml2selinux is a compiler that translates Casbin PML (Policy Modeling Language)
+		Long: `casbin2selinux is a compiler that translates Casbin PML (Policy Modeling Language)
 into SELinux policy files (.te, .fc, .if).
 
 This allows you to write security policies in a higher-level, more abstract
@@ -92,7 +92,7 @@ language and automatically generate SELinux policies.`,
 		Use:   "version",
 		Short: "Print version information",
 		Run: func(cmd *cobra.Command, args []string) {
-			fmt.Println("pml2selinux version 0.1.0")
+			fmt.Println("casbin2selinux version 0.1.0")
 		},
 	}
 
@@ -369,12 +369,12 @@ This is a SELinux policy project using Casbin PML.
 
 ### Compile the policy
 ` + "```bash" + `
-pml2selinux compile -m model.conf -p policy.csv -o output
+casbin2selinux compile -m model.conf -p policy.csv -o output
 ` + "```" + `
 
 ### Validate the policy
 ` + "```bash" + `
-pml2selinux validate -m model.conf -p policy.csv
+casbin2selinux validate -m model.conf -p policy.csv
 ` + "```" + `
 
 ### Install the generated policy
@@ -387,7 +387,7 @@ sudo semodule -i ` + projectName + `.pp
 
 ## Documentation
 
-For more information, see the [PML to SELinux documentation](https://github.com/cici0602/pml-to-selinux).
+For more information, see the [Casbin to SELinux documentation](https://github.com/casbin/casbin-to-selinux).
 `
 
 	// Write model.conf
@@ -427,5 +427,5 @@ For more information, see the [PML to SELinux documentation](https://github.com/
 	fmt.Printf("  └── output/      (Generated files)\n\n")
 	fmt.Printf("Next steps:\n")
 	fmt.Printf("  cd %s\n", projectName)
-	fmt.Printf("  pml2selinux compile -m model.conf -p policy.csv\n")
+	fmt.Printf("  casbin2selinux compile -m model.conf -p policy.csv\n")
 }

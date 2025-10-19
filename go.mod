@@ -1,11 +1,8 @@
-module github.com/cici0602/pml-to-selinux
+module github.com/casbin/casbin-to-selinux
 
 go 1.22.2
 
-require (
-	github.com/cici0602/pml-to-selinux v1.0.0
-	github.com/spf13/cobra v1.10.1
-)
+require github.com/spf13/cobra v1.10.1
 
 require (
 	github.com/inconshreveable/mousetrap v1.1.0 // indirect

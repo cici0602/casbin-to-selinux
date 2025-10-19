@@ -19,7 +19,7 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/cici0602/pml-to-selinux/models"
+	"github.com/casbin/casbin-to-selinux/models"
 )
 
 // Analyzer performs semantic analysis on decoded PML

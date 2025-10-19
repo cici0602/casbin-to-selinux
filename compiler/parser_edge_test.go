@@ -19,7 +19,7 @@ import (
 	"path/filepath"
 	"testing"
 
-	"github.com/cici0602/pml-to-selinux/models"
+	"github.com/casbin/casbin-to-selinux/models"
 )
 
 // TestParserEdgeCases tests edge cases and error handling

@@ -27,8 +27,8 @@ func TestActionMapper_BasicMappings(t *testing.T) {
 		action        string
 		objectClass   string
 		expectedClass string
-		expectedPerm
-		},
+		expectedPerms []string
+	}{
 		{
 			name:          "Execute file",
 			action:        "execute",

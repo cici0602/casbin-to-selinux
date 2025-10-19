@@ -17,8 +17,8 @@ package tests
 import (
 	"testing"
 
-	"github.com/cici0602/pml-to-selinux/compiler"
-	"github.com/cici0602/pml-to-selinux/models"
+	"github.com/casbin/casbin-to-selinux/compiler"
+	"github.com/casbin/casbin-to-selinux/models"
 )
 
 func TestBasicPolicyGeneration(t *testing.T) {

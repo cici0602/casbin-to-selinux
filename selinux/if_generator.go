@@ -18,7 +18,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/cici0602/pml-to-selinux/models"
+	"github.com/casbin/casbin-to-selinux/models"
 )
 
 // IFGenerator handles generation of SELinux interface (.if) files

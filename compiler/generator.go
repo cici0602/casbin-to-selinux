@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/cici0602/pml-to-selinux/mapping"
-	"github.com/cici0602/pml-to-selinux/models"
+	"github.com/casbin/casbin-to-selinux/mapping"
+	"github.com/casbin/casbin-to-selinux/models"
 )
 
 // Generator orchestrates the conversion from PML to SELinux policy

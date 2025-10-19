@@ -33,7 +33,7 @@ This example demonstrates a background worker process that:
 ## Compile
 
 ```bash
-pml2selinux compile -m model.conf -p policy.csv -o output/
+casbin2selinux compile -m model.conf -p policy.csv -o output/
 ```
 
 ## Notes

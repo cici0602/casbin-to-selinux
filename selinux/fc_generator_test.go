@@ -18,7 +18,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/cici0602/pml-to-selinux/models"
+	"github.com/casbin/casbin-to-selinux/models"
 )
 
 func TestFCGenerator_Generate(t *testing.T) {

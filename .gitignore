@@ -34,4 +34,4 @@ go.work.sum
 docs/
 
 output/
-pml2selinux
+casbin2selinux

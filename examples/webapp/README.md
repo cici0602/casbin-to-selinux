@@ -37,5 +37,5 @@ This example demonstrates a simple web application that:
 ## Compile
 
 ```bash
-pml2selinux compile -m model.conf -p policy.csv -o output/
+casbin2selinux compile -m model.conf -p policy.csv -o output/
 ```

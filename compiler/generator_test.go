@@ -17,7 +17,7 @@ package compiler
 import (
 	"testing"
 
-	"github.com/cici0602/pml-to-selinux/models"
+	"github.com/casbin/casbin-to-selinux/models"
 )
 
 func TestGenerator_Generate(t *testing.T) {

@@ -20,7 +20,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/cici0602/pml-to-selinux/models"
+	"github.com/casbin/casbin-to-selinux/models"
 )
 
 // Parser handles parsing of PML model and policy files

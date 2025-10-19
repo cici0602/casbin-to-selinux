@@ -1,9 +1,9 @@
-# PML to SELinux
+# Casbin to SELinux
 
-[![Go Report Card](https://goreportcard.com/badge/github.com/cici0602/pml-to-selinux)](https://goreportcard.com/report/github.com/cici0602/pml-to-selinux)
-[![Build](https://github.com/cici0602/pml-to-selinux/actions/workflows/ci.yml/badge.svg)](https://github.com/cici0602/pml-to-selinux/actions/workflows/ci.yml)
+[![Go Report Card](https://goreportcard.com/badge/github.com/casbin/casbin-to-selinux)](https://goreportcard.com/report/github.com/casbin/casbin-to-selinux)
+[![Build](https://github.com/casbin/casbin-to-selinux/actions/workflows/ci.yml/badge.svg)](https://github.com/casbin/casbin-to-selinux/actions/workflows/ci.yml)
 [![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](LICENSE)
-[![Release](https://img.shields.io/github/v/release/cici0602/pml-to-selinux)](https://github.com/cici0602/pml-to-selinux/releases)
+[![Release](https://img.shields.io/github/v/release/casbin/casbin-to-selinux)](https://github.com/casbin/casbin-to-selinux/releases)
 [![Discord](https://img.shields.io/discord/1022748306096537660?logo=discord&label=discord&color=5865F2)](https://discord.gg/S5UjpzGZjN)
 
 Lightweight compiler that translates Casbin PML (Policy Modeling Language) into SELinux policy modules.
@@ -43,14 +43,14 @@ It does not support Android SELinux or other non-standard variants.
 Install the CLI using go:
 
 ```bash
-go install github.com/cici0602/pml-to-selinux/cli@latest
+go install github.com/casbin/casbin-to-selinux/cli@latest
 ```
 
 Or build from source:
 
 ```bash
-git clone https://github.com/cici0602/pml-to-selinux.git
-cd pml-to-selinux
+git clone https://github.com/casbin/casbin-to-selinux.git
+cd casbin-to-selinux
 make build
 ```
 
@@ -59,7 +59,7 @@ make build
 1. Initialize a project:
 
 ```bash
-pml2selinux init myapp
+casbin2selinux init myapp
 cd myapp
 ```
 
@@ -82,16 +82,16 @@ p, myapp_t, tcp:8080, name_bind, allow
 3. Compile the policy:
 
 ```bash
-pml2selinux compile -m model.conf -p policy.csv -o output/
+casbin2selinux compile -m model.conf -p policy.csv -o output/
 ```
 
 ## Commands
 
 ```bash
-pml2selinux compile    # Compile PML to SELinux policy
-pml2selinux validate   # Validate PML files
-pml2selinux init       # Initialize a new project
-pml2selinux version    # Show version
+casbin2selinux compile    # Compile PML to SELinux policy
+casbin2selinux validate   # Validate PML files
+casbin2selinux init       # Initialize a new project
+casbin2selinux version    # Show version
 ```
 
 ## Examples
