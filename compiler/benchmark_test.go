@@ -18,7 +18,7 @@ import (
 	"testing"
 )
 
-// BenchmarkParser 测试解析性能
+// BenchmarkParser
 func BenchmarkParser(b *testing.B) {
 	modelPath := "../examples/httpd/httpd_model.conf"
 	policyPath := "../examples/httpd/httpd_policy.csv"
@@ -33,7 +33,7 @@ func BenchmarkParser(b *testing.B) {
 	}
 }
 
-// BenchmarkAnalyzer 测试分析性能
+// BenchmarkAnalyzer
 func BenchmarkAnalyzer(b *testing.B) {
 	parser := NewParser("../examples/httpd/httpd_model.conf", "../examples/httpd/httpd_policy.csv")
 	pml, _ := parser.Parse()
@@ -48,7 +48,7 @@ func BenchmarkAnalyzer(b *testing.B) {
 	}
 }
 
-// BenchmarkGenerator 测试生成性能
+// BenchmarkGenerator 
 func BenchmarkGenerator(b *testing.B) {
 	parser := NewParser("../examples/httpd/httpd_model.conf", "../examples/httpd/httpd_policy.csv")
 	pml, _ := parser.Parse()
@@ -64,7 +64,7 @@ func BenchmarkGenerator(b *testing.B) {
 	}
 }
 
-// BenchmarkOptimizer 测试优化性能
+// BenchmarkOptimizer 
 // TODO: Optimization feature is not yet implemented
 // func BenchmarkOptimizer(b *testing.B) {
 // 	parser := NewParser("../examples/httpd/httpd_model.conf", "../examples/httpd/httpd_policy.csv")
@@ -79,7 +79,7 @@ func BenchmarkGenerator(b *testing.B) {
 // 	}
 // }
 
-// BenchmarkFullPipeline 测试完整流程性能
+// BenchmarkFullPipeline 
 func BenchmarkFullPipeline(b *testing.B) {
 	modelPath := "../examples/httpd/httpd_model.conf"
 	policyPath := "../examples/httpd/httpd_policy.csv"
